@@ -8,133 +8,78 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        &-item {
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            margin-left: 48px;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                border-bottom: 3px solid $secondary-color;
+            }
+        }
+    }
+    &-icon {
+        display: flex;
+        li {
+            &:nth-child(2){
+                margin-left: 32px;
+            }
+            &:nth-child(3){
+                margin-left: 32px;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        a {
+            width: 48px;
+            height: auto;
+        }
+    }
+    &-message {
+        font-size: $fz-36;
+        margin-bottom: 32px;
+        li {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &-copyright {
+        border-top: 1px solid $secondary-color;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        p {
+            color: $secondary-text-color;
+        }
+        &-link {
             display: flex;
-            justify-content: center;
-            align-items: center;
             li {
-                margin-right: 48px;
+                margin-left: 48px;
                 border-bottom: 3px solid transparent;
                 &:hover {
                     border-bottom: 3px solid $secondary-color;
                 }
             }
         }
-        &-icon {
-            display: flex;
-            a {
-                width: 48px;
-                height: auto;
-            }
-            li {
-                &:hover {
-                    opacity: 0.8;
-                }
-                &:nth-child(2){
-                    margin: 0 12px;
-                }
-                &:nth-child(3){
-                    margin: 0 12px;
-                }
-            }
-        }
-        &-message {
-            font-size: $fz-36;
-            margin-bottom: 32px;
-        }
-        &-copy-right {
-            border-top: 1px solid $secondary-color;
-            display: flex;
-            justify-content: space-between;
-            padding-top: 32px;
-            &-link {
-                display: flex;
-                li {
-                    margin-left: 48px;
-                    border-bottom: 3px solid transparent;
-                    &:hover {
-                        border-bottom: 3px solid $secondary-color;
-                    }
-                }
-            }
-            p {
-                color: $secondary-color;
-            }
-        }
     }
 }
-@include table {
-    .footer {
-        &-nav {
-            padding-bottom: 40px;
-        }
-        &-icon {
-            li {
-                &:nth-child(2){
-                    margin-left: 16px;
-                }
-                &:nth-child(3){
-                    margin-left: 16px;
-                }
-            }
-        }
-        &-message {
-            margin-bottom: 32px;
-            li {
-                &:nth-child(2){
-                    margin-top: 8px;
-                }
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-    }
-}
-@include mobile {
-    .footer {
-        &-nav {
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-        &-top {
-            display: flex;
-            justify-content: space-between;
-        }
-        &-link {
-            flex-direction: column;
-            align-items: flex-end;
-            flex: 1;
-            &-item {
-                display: none;
-            }
-            &-icon {
-                flex: 1;
-                li {
-                    &:nth-child(2){
-                        margin-left: 8px;
-                    }
-                    &:nth-child(3){
-                        margin-left: 8px;
-                    }
-                }
-                a {
-                    width: 24px;
-                }
-            }
-        }
-        &-message {
-            font-size: $fz-16;
-            order: -1;
-            flex: 2;
-        }
-        &-copy-right {
-            flex-direction: column;
-            justify-content: flex-start;
-            padding-top: 16px;
-            &-link {
-                display: block;
-            }
-        }
-    }
-}
+// @include table {
+//     .footer {
+//         &-nav {
+//             padding-bottom: 40px;
+//         }
+//     }
+// }
+// @mixin mobile {
+//     .footer {
+//         &-nav {
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//     }
+// }
