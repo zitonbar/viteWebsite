@@ -1,0 +1,12 @@
+.faq {
+    &-content {
+        max-width: 64.85%;
+        padding: 96px 0 80px 0;
+    }
+}
+.title-black {
+    font-size: $fz-48;
+    font-weight: 700;
+    border-left: 8px solid $border-left-red;
+    padding-left: 16px;
+}
