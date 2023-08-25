@@ -1,4 +1,5 @@
 .footer {
+    background-color: $primary-color;
     &-nav {
         padding-top: 48px;
         padding-bottom: 32px;
@@ -67,15 +68,13 @@
         &-nav {
             padding-bottom: 40px;
         }
-        &-link {
-            &-icon {
-                li {
-                    &:nth-child(2){
-                        margin-left: 16px;
-                    }
-                    &:nth-child(3){
-                        margin-left: 16px;
-                    }
+        &-icon {
+            li {
+                &:nth-child(2){
+                    margin-left: 16px;
+                }
+                &:nth-child(3){
+                    margin-left: 16px;
                 }
             }
         }
