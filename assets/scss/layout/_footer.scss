@@ -37,7 +37,7 @@
             display: none;
         }
         li {
-            margin-left: 48px;
+            margin-right: 48px;
             border-bottom: 3px solid transparent;
             &:hover {
                 border-bottom: 3px solid $secondary-color;
@@ -52,32 +52,26 @@
         li {
             &:nth-child(2){
                 margin-left: 32px;
+                @include table {
+                    margin-left: 16px;
+                }
+                @include mobile {
+                    margin-left: 8px;
+                }
             }
             &:nth-child(3){
                 margin-left: 32px;
+                @include table {
+                    margin-left: 16px;
+                }
+                @include mobile {
+                    margin-left: 8px;
+                }
             }
             &:hover {
                 opacity: 0.8;
             }
-            @include table {
-                &:nth-child(2){
-                    margin-left: 16px;
-                }
             }
-            @include table {
-                &:nth-child(3){
-                    margin-left: 16px;
-                }
-            }
-            @include mobile {
-                &:nth-child(2){
-                    margin-left: 8px;
-                }
-                &:nth-child(3){
-                    margin-left: 8px;
-                }
-            }
-        }
         a {
             width: 48px;
             height: auto;
@@ -101,7 +95,7 @@
             @include table {
                 &:nth-child(2){
                     margin-top: 8px;
-                }
+                   }
             }
         }
     }

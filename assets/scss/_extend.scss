@@ -24,6 +24,9 @@
 .recommend,
 .contact-box {
     @extend %py-80;
+    @include mobile {
+        padding: 40px 0;
+    }
 }
 %title-fz48 {
     font-size: $fz-48;
