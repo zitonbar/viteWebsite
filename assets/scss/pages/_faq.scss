@@ -4,6 +4,13 @@
     &-content {
         max-width: 64.85%;
         padding: 96px 0 80px 0;
+        @include table {
+            max-width: 100%;
+            padding: 80px 0;
+        }
+        @include mobile {
+            padding: 40px 0 64px 0;
+        }
         &-title {
             font-size: $fz-24;
             font-weight: 700;
@@ -21,33 +28,31 @@
             li {
                 &:nth-child(2){
                     margin-bottom: 32px;
+                    @include mobile {
+                        margin-bottom: 24px;
+                    }
                 }
                 &:nth-child(4){
                     margin-bottom: 32px;
+                    @include mobile {
+                        margin-bottom: 24px;
+                    }
                 }
                 &:nth-child(6){
                     margin-bottom: 32px;
+                    @include mobile {
+                        margin-bottom: 24px;
+                    }
                 }
                 &:nth-child(8){
                     margin-bottom: 32px;
+                    @include mobile {
+                        margin-bottom: 24px;
+                    }
                 }
                 &:nth-child(10){
                     margin-bottom: 32px;
-                }
-                @include mobile {
-                    &:nth-child(2){
-                        margin-bottom: 24px;
-                    }
-                    &:nth-child(4){
-                        margin-bottom: 24px;
-                    }
-                    &:nth-child(6){
-                        margin-bottom: 24px;
-                    }
-                    &:nth-child(8){
-                        margin-bottom: 24px;
-                    }
-                    &:nth-child(10){
+                    @include mobile {
                         margin-bottom: 24px;
                     }
                 }
@@ -55,9 +60,14 @@
         }
     }
 }
-.title-black {
-    font-size: $fz-48;
-    font-weight: 700;
-    border-left: 8px solid $border-left-red;
-    padding-left: 16px;
+.title {
+    &-black {
+        font-size: $fz-48;
+        font-weight: 700;
+        border-left: 8px solid $border-left-red;
+        padding-left: 16px;
+        @include mobile {
+            font-size: $fz-24;
+        }
+    }
 }
