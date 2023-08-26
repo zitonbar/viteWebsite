@@ -125,9 +125,20 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      @include mobile {
+        background-image: url(https://github.com/zitonbar/2023-week3-product/blob/main/images/index-bg-sm.png?raw=true);
+      }
       ul {
         display: flex;
         align-items: center;
+        @include table {
+          flex-direction: column;
+        }
+        li {
+          &:nth-child(2){
+            margin-top: 24px;
+          }
+        }
       }
       h4 {
         padding: 8px 0;
@@ -138,14 +149,52 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
+        @include table {
+          justify-content: center;
+          align-items: center;
+        }
     }
     &-item {
         width: 306px;
+        @include table {
+          width: 336px;
+        }
+        @include mobile {
+          width: 100%;
+        }
+        &:nth-child(1){
+          @include table {
+            margin-right: 12px;
+          }
+          @include mobile {
+            margin: 0;
+          }
+        }
         &:nth-child(2){
             margin: 0 12px;
+            @include table {
+              margin: 0 0 0 12px;
+            }
+            @include mobile {
+              margin: 16px 0 0 0;
+            }
         }
         &:nth-child(3){
             margin: 0 12px;
+            @include table {
+              margin: 24px 12px 0 0;
+            }
+            @include mobile {
+              margin: 16px 0 0 0;
+            }
+        }
+        &:nth-child(4){
+          @include table {
+            margin: 24px 0 0 12px;
+          }
+          @include mobile {
+            margin: 16px 0 0 0;
+          }
         }
         &-content {
             display: flex;
@@ -176,11 +225,20 @@
         background-color: $tertiary-color;
         p {
             font-size: $fz-20;
+            @include table {
+              font-size: $fz-16;
+            }
         }
     }
     &-content {
         width: 48%;
         margin: 0 auto;
+        @include table {
+          width: 75%;
+        }
+        @include mobile {
+          width: 100%;
+        }
     }
     &-form {
         display: flex;

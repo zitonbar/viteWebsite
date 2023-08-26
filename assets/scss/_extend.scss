@@ -33,6 +33,11 @@
     font-weight: 700;
     text-align: center;
 }
+%title-fz24 {
+    font-size: $fz-24;
+    font-weight: 700;
+    text-align: center;
+}
 %title-fz48-italic {
     font-size: $fz-48;
     font-weight: 900;
@@ -42,6 +47,9 @@
 }
 .title {
     @extend %title-fz48;
+    // @include mobile {
+    //     @extend %title-fz24;
+    // }
     &-red {
         color: $primary-text-color;
         &-mb48 {
