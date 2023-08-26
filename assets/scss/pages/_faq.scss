@@ -1,3 +1,5 @@
+@import '../mixin';
+
 .faq {
     &-content {
         max-width: 64.85%;
@@ -32,21 +34,7 @@
                 &:nth-child(10){
                     margin-bottom: 32px;
                 }
-            }
-        }
-    }
-}
-.title-black {
-    font-size: $fz-48;
-    font-weight: 700;
-    border-left: 8px solid $border-left-red;
-    padding-left: 16px;
-}
-@include mobile {
-    .faq {
-        &-content {
-            &-text {
-                li {
+                @include mobile {
                     &:nth-child(2){
                         margin-bottom: 24px;
                     }
@@ -66,4 +54,10 @@
             }
         }
     }
+}
+.title-black {
+    font-size: $fz-48;
+    font-weight: 700;
+    border-left: 8px solid $border-left-red;
+    padding-left: 16px;
 }

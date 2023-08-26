@@ -19,8 +19,8 @@
     }
 }
   
-  //feature
-  .feature {
+//feature
+.feature {
     background-color: $tertiary-color;
     color: $primary-text-color;
     &-content {
@@ -49,8 +49,8 @@
       }
     }
 }
-  //classic
-  .classic {
+//classic
+.classic {
     &-list {
       display: flex;
       li {
@@ -66,8 +66,8 @@
       }
     }
 }
-  //co-branding
-  .co-branding {
+//co-branding
+.co-branding {
       background-image: url(https://github.com/zitonbar/2023-week3-product/blob/main/images/index-bg.png?raw=true);
       background-size: cover;
       background-repeat: no-repeat;
@@ -80,8 +80,8 @@
         padding: 8px 0;
       }
 }
-  //recommend
-  .recommend {
+//recommend
+.recommend {
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -117,7 +117,7 @@
         }
 }
 
-  //contact
+//contact
 .contact {
     &-box {
         background-color: $tertiary-color;
@@ -144,3 +144,6 @@
 .checkbox-block {
     margin-bottom: 48px;
 }
+// @mixin table {
+
+// }
