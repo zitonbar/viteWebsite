@@ -5,16 +5,35 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @include mobile {
+      background-image: url(https://github.com/zitonbar/2023-week3-product/blob/main/images/home-header-sm.png?raw=true);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 375px;
+      height: 396px;
+    }
     &-content {
       padding: 296px 0;
       text-align: right;
       margin-left: auto;
+      @include table {
+        padding-right: 14px;
+        padding-top: 144px;
+        padding-bottom: 144px;
+      }
       p {
         font-size: $fz-36;
+        @include mobile {
+          font-size: $fz-16;
+        }
       }
       span {
         font-size: $fz-64;
         font-weight: 700;
+        @include mobile {
+          font-size: $fz-24;
+        }
       }
     }
 }

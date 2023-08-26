@@ -6,17 +6,38 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+            padding: 0;
+        }
         &-link {
             display: flex;
             align-items: center;
             font-size: $fz-20;
+            @include mobile {
+                font-size: $fz-16;
+                flex-wrap: wrap;
+            }
             li {
                 padding: 6px 0;
                 margin-left: 32px;
                 margin-right: 32px;
                 border-bottom: 3px solid transparent;
+                @include mobile {
+                    width: 187px;
+                    margin: 0;
+                    padding: 12px 12px;
+                    text-align: center;
+                    border: 1px solid $secondary-text-color;
+                }
                 &:hover {
                     border-bottom: 3px solid $secondary-color;
+                }
+                @include mobile {
+                    &:hover {
+                        border-bottom: none;
+                        opacity: 0.7;
+                    }
                 }
             }
         }
